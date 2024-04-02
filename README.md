@@ -10,7 +10,8 @@ C를 이용해 데이터시트를 읽고 파싱하는 예제입니다.
 
 ## C_minning_project
 Thread를 이용해 채굴기를 생성, 삭제할 수 있는 예제입니다. <br>
-mutex를 추가 활용했습니다.
+각 Thread는 0.1초에 1씩 전역변수 "coin"을 증가시킵니다. <br>
+coin 접근시 mutex를 추가 활용했습니다.
 <br><br>
 build:
 ```
