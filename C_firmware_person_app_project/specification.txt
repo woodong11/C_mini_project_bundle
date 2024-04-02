@@ -1,0 +1,16 @@
+1) Firmware App
+• default : A ~ Z 까지 출력 후 Z ~ A 까지 무한 출력하는 프로그램을 작성 (0.1 초 간격, 한 글자씩)
+• Signal 을 받으면 특정 동작을 한다.
+• SIGUSR1 : “[Button Clicked]” 출력
+• SIGUSR2 : 화면 clear 후, 화면에 “RESET” 출력
+• SIGTERM : “BYE” 출력 후 프로그램 종료
+
+2) Person App
+• Person App 실행 시, Firmware의 PID와 함께 입력해야 동작이 시작된다. (ex. $person 14212 )
+• 사용자 입력을 기다리는 Shell 동작
+• 1 → SIGUSR1 Signal 발생
+• 2 → SIGUSR2 Signal 발생
+• 3 → SIGTERM Signal 발생
+• exit → Person App 종료
+• 그 외, 다시 입력하도록 메시지 출력
+• WDT 가 동작 중이다. ( 지정된 시간 동안 입력이 없을 경우, 자동으로 종료, Firmware 도 종료 )
