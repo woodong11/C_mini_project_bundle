@@ -36,5 +36,34 @@ gcc minning.c -o ./gogo -lpthread
 ```
 <br><br>
 
+## C_walkie_talkie_project
+socket통신을 이용해 서버와 클라이언트간 무전기를 구현하는 예제입니다. <br>
+Server부터 먼저 메시지를 보내야 하고, 그 다음 클라이언트가 보내고 번갈아가면서 메시지를 보냅니다. <br>
+문자열메시지는 그대로 출력, 숫자메시지라면 x2해서 출력합니다. <br>
+![도전3](https://github.com/woodong11/C_mini_project_bundle/assets/91379630/949f1bed-1d9d-4c65-a179-892b30ec5486)
+<br><br>
+<b>build </b>
+```
+gcc client.c -o ./client && gcc server.c -o ./server
+```
+<b>run</b><br>
+
+open two terminal window <br>
+첫 번째 터미널:  `./server 사용할PORT` ex) ./server 12345 <br>
+두 번째 터미널:  `./client 서버의IP 사용할PORT` ex) ./client 127.0.0.1  12345 <br>
+server가 local일 경우 server IP주소는 127.0.0.1입니다. <br>
+server 메시지 입력 후 엔터 -> client 메시지 입력 후 엔터 -> ... 번갈아가며 반복 <br>
+
+
+
+
+<br><br>
+
+
+
+
+
+<br><br>
+
 ## C_shell_project
 history, date, uptime, ls 기능이 있는 shell 예제입니다. 
