@@ -1,7 +1,7 @@
 
 
 
-## C_binary_parsing_project
+## 1. C_binary_parsing_project
 C를 이용해 데이터시트를 읽고 파싱하는 예제입니다. 
 
 주어지는 114비트 데이터를 읽고 16비트별로 파싱해서 정보를 10진수로 출력합니다. 
@@ -9,7 +9,7 @@ C를 이용해 데이터시트를 읽고 파싱하는 예제입니다.
 ![image](https://github.com/woodong11/C_parsing_project/assets/91379630/fa0622e8-bdb9-473e-82d8-3a1cbf589c64)
 
 
-## C_firmware_person_app_project
+## 2. C_firmware_person_app_project
 C를 이용해 firmware, person app을 만들고 person app에서 signal을 보내 firmware에서 확인하는 예제입니다. <br>
 person app 에는 추가로 WDT를 구현해, 자체적으로 alarm signal을 보내고 3초간 입력이 없으면 프로세스를 둘 다 종료합니다. 
 
@@ -24,7 +24,7 @@ person에서 1, 2, 3, exit 중 입력 <br>
 
 <br><br>
 
-## C_minning_project
+## 3. C_minning_project
 Thread를 이용해 채굴기를 생성, 삭제할 수 있는 예제입니다. <br>
 각 Thread는 0.1초에 1씩 전역변수 "coin"을 증가시킵니다. <br>
 add 명령 시 채굴기 추가, del 명령 시 오래된 채굴기부터 삭제합니다. <br>
@@ -36,11 +36,11 @@ gcc minning.c -o ./gogo -lpthread
 ```
 <br><br>
 
-## C_shell_project
+## 4. C_shell_project
 history, date, uptime, ls 기능이 있는 shell 예제입니다. 
 <br><br>
 
-## C_walkie_talkie_project
+## 5. C_walkie_talkie_project
 socket통신을 이용해 서버와 클라이언트간 무전기를 구현하는 예제입니다. <br>
 Server부터 먼저 메시지를 보내야 하고, 그 다음 클라이언트가 보내고 번갈아가면서 메시지를 보냅니다. <br>
 문자열메시지는 그대로 출력, 숫자메시지라면 x2해서 출력합니다. <br>
