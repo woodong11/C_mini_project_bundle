@@ -36,6 +36,10 @@ gcc minning.c -o ./gogo -lpthread
 ```
 <br><br>
 
+## C_shell_project
+history, date, uptime, ls 기능이 있는 shell 예제입니다. 
+<br><br>
+
 ## C_walkie_talkie_project
 socket통신을 이용해 서버와 클라이언트간 무전기를 구현하는 예제입니다. <br>
 Server부터 먼저 메시지를 보내야 하고, 그 다음 클라이언트가 보내고 번갈아가면서 메시지를 보냅니다. <br>
@@ -54,16 +58,11 @@ open two terminal window <br>
 server가 local일 경우 server IP주소는 127.0.0.1입니다. <br>
 server 메시지 입력 후 엔터 -> client 메시지 입력 후 엔터 -> ... 번갈아가며 반복 <br>
 
-
-
-
 <br><br>
 
 
 
 
 
-<br><br>
 
-## C_shell_project
-history, date, uptime, ls 기능이 있는 shell 예제입니다. 
+
