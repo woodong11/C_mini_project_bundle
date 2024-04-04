@@ -21,7 +21,7 @@ gcc chat_server.c -o ./server -lpthread
 
 서버용 터미널을 켜고, 클라이언트로 접속할 PC에서 클라이언트용 터미널을 켭니다. <br>
 서버용 터미널:  `./server 사용할PORT` ex) ./server 12345 <br>
-클라이언트 터미널들:  `./client 서버의IP 사용할PORT 사용자이름` ex) ./client 127.0.0.1  12345 lee<br>
+클라이언트 터미널들:  `./client 서버의IP주소 사용할PORT 사용자이름` ex) ./client 127.0.0.1  12345 lee<br>
 [참고] server가 local일 경우 server IP주소는 127.0.0.1입니다. <br>
 이후 클라이언트에서 메시지를 입력하면 모든 클라이언트가 채팅 내용을 확인할 수 있습니다. <br>
 <br><br>
@@ -71,7 +71,7 @@ gcc client.c -o ./client && gcc server.c -o ./server
 
 open two terminal window <br>
 첫 번째 터미널:  `./server 사용할PORT` ex) ./server 12345 <br>
-두 번째 터미널:  `./client 서버의IP 사용할PORT` ex) ./client 127.0.0.1  12345 <br>
+두 번째 터미널:  `./client 서버의IP주소 사용할PORT` ex) ./client 127.0.0.1  12345 <br>
 [참고] server가 local일 경우 server IP주소는 127.0.0.1입니다. <br>
 server 메시지 입력 후 엔터 -> client 메시지 입력 후 엔터 -> ... 번갈아가며 반복 <br>
 
